@@ -8,27 +8,68 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    @*<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="user-select: auto;">
+        <div class="container-fluid" style="user-select: auto;">
+            <a class="navbar-brand" href="#" style="user-select: auto;">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="user-select: auto;">
+                <span class="navbar-toggler-icon" style="user-select: auto;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01" style="user-select: auto;">
+                <ul class="navbar-nav me-auto" style="user-select: auto;">
+                    <li class="nav-item" style="user-select: auto;">
+                        <a class="nav-link active" href="#" style="user-select: auto;">
+                            Home
+                            <span class="visually-hidden" style="user-select: auto;">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" style="user-select: auto;">
+                        <a class="nav-link" href="#" style="user-select: auto;">Features</a>
+                    </li>
+                    <li class="nav-item" style="user-select: auto;">
+                        <a class="nav-link" href="#" style="user-select: auto;">Pricing</a>
+                    </li>
+                    <li class="nav-item" style="user-select: auto;">
+                        <a class="nav-link" href="#" style="user-select: auto;">About</a>
+                    </li>
+                    <li class="nav-item dropdown" style="user-select: auto;">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="user-select: auto;">Dropdown</a>
+                        <div class="dropdown-menu" style="user-select: auto;">
+                            <a class="dropdown-item" href="#" style="user-select: auto;">Action</a>
+                            <a class="dropdown-item" href="#" style="user-select: auto;">Another action</a>
+                            <a class="dropdown-item" href="#" style="user-select: auto;">Something else here</a>
+                            <div class="dropdown-divider" style="user-select: auto;"></div>
+                            <a class="dropdown-item" href="#" style="user-select: auto;">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex" style="user-select: auto;">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search" style="user-select: auto;">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit" style="user-select: auto;">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>*@
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("E-sHopping", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                </ul>
-            </div>
-        </div>
+    <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            <li>@Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+        </ul>
+    </div>
+    </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p> </p>
         </footer>
     </div>
 

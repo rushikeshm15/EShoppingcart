@@ -140,8 +140,14 @@
     <Compile Include="Migrations\202303290543349_phonenumberdatatypeupdate.designer.cs">
       <DependentUpon>202303290543349_phonenumberdatatypeupdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304010334551_changes.cs" />
+    <Compile Include="Migrations\202304010334551_changes.designer.cs">
+      <DependentUpon>202304010334551_changes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ADbContext.cs" />
+    <Compile Include="Models\Men.cs" />
+    <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Models\user_details.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -162,6 +168,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -199,6 +206,8 @@
     <Content Include="Views\Accountreg\Register.cshtml" />
     <Content Include="Views\Accountreg\Login.cshtml" />
     <Content Include="Views\Accountreg\LoggedIn.cshtml" />
+    <Content Include="Views\Accountreg\Index.cshtml" />
+    <Content Include="Views\Accountreg\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -236,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303290543349_phonenumberdatatypeupdate.resx">
       <DependentUpon>202303290543349_phonenumberdatatypeupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304010334551_changes.resx">
+      <DependentUpon>202304010334551_changes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -8,14 +8,14 @@ namespace eshopping.Models
         public int UserId { get; set; }
 
 
-        [Required(ErrorMessage = "First Name is Required.")]
-        public string Firstname { get; set; }
+        [Required(ErrorMessage = "Name is Required.")]
+        public string Name { get; set; }
 
-        [Required(ErrorMessage = "Last Name is Required.")]
-        public string Lastname { get; set; }
+        //[Required(ErrorMessage = "Last Name is Required.")]
+        //public string Lastname { get; set; }
 
         [Required(ErrorMessage = "Email is Required.")]
-
+        //[RegularExpression(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([azA-Z]{2,4}|[0-9]{1,3})(\]?)$", ErrorMessage = "Please Enter Valid Email")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "User Name is Required.")]
@@ -30,12 +30,12 @@ namespace eshopping.Models
 
         public long Phonenumber { get; set; }
 
-        public string City { get; set; }
+        //public string City { get; set; }
 
 
-        public string Address { get; set; }
+        //public string Address { get; set; }
 
-        public int PostalCode { get; set; }
+        //public int PostalCode { get; set; }
 
 
 

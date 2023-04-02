@@ -84,3 +84,4 @@ C:\Users\admin\Desktop\Eshopping\ecommerce web app\eShopping\obj\Debug\eshopping
 C:\Users\admin\Desktop\Eshopping\ecommerce web app\eShopping\obj\Debug\eshopping.Migrations.FirstModel.resources
 C:\Users\admin\Desktop\Eshopping\ecommerce web app\eShopping\obj\Debug\eshopping.csproj.GenerateResource.cache
 C:\Users\admin\Desktop\Eshopping\ecommerce web app\eShopping\obj\Debug\eshopping.Migrations.phonenumberdatatypeupdate.resources
+C:\Users\admin\Desktop\Eshopping\ecommerce web app\eShopping\obj\Debug\eshopping.Migrations.changes.resources
