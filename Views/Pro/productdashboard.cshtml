@@ -1,0 +1,45 @@
+﻿@model IEnumerable<eshopping.Models.Product>
+
+@{
+    ViewBag.Title = "productdashboard";
+}
+
+<h2>productdashboard</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Productname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Productdescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Productprice)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Productname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Productdescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Productprice)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
+            @*@Html.ActionLink("Details", "Details", new { id=item.ProductId }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
+        </td>
+    </tr>
+}
+
+</table>

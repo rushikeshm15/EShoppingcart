@@ -83,5 +83,33 @@ namespace eshopping.Controllers
             return View();
             //return RedirectToAction("Index");
         }
+
+
+
+
+        //Delete 
+        public ActionResult Delete(int id)
+        {
+            using (ADbContext db = new ADbContext())
+            {
+                if (id > 0)
+                {
+                    var Drow = db.products.Where(model => model.ProductId == id).FirstOrDefault();//we use Linq query with help of lamda expression 
+                    if (Drow != null)
+                    {
+                        db.Entry(Drow).State = EntityState.Deleted;
+                        int b = db.SaveChanges();
+                        if (b > 0)
+                        {
+                            TempData["DeleteMessage"] = "<script> alert('Filed Deleted!!')</script>";
+                        }
+
+                    }
+                }
+                return RedirectToAction("productdashboard");
+
+
+            }
+        }
     }
 }
