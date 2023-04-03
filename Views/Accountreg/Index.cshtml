@@ -1,5 +1,6 @@
 ﻿@model IEnumerable<eshopping.Models.user_details>
 
+
 @{
     ViewBag.Title = "Index";
 }
@@ -68,8 +69,8 @@
                 @Html.DisplayFor(modelItem => item.Password)
             </td>
             @*<td>
-                @Html.DisplayFor(modelItem => item.Confirmpassword)
-            </td>*@
+                    @Html.DisplayFor(modelItem => item.Confirmpassword)
+                </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.Phonenumber)
             </td>
@@ -84,12 +85,10 @@
                 </td>*@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.UserId }) |
-                @Html.ActionLink("Details", "Details", new { id = item.UserId }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.UserId }) |*@
                 @Html.ActionLink("Delete", "Delete", new { id = item.UserId })
             </td>
         </tr>
-
-
-    }
+        }
 
 </table>

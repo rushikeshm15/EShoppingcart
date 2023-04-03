@@ -3,10 +3,28 @@
     ViewBag.Title = "LoggedIn";
 }
 
+
 @if (Session["UserId"] != null)
-            {
-    <h4>Hello @Session["Username"].ToString()</h4>
-            }
+{
+    <h4>Welcome @Session["Username"].ToString()</h4>
+}
 
 
+@*@model IEnumerable<eshopping.Models.Product>
+    <table class="table">
+        <th>
+            @Html.DisplayNameFor(model => model.Productname)
+        </th>
+        <th>
+                @Html.DisplayNameFor(model => model.Productname)
+            </th>
 
+        @foreach (var item in Model)
+        {
+            <td>
+                @Html.DisplayFor(modelItem => item.P)
+            </td>
+        }*@
+
+
+@*</table>*@

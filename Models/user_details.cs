@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eshopping.Models
 {
@@ -30,7 +32,9 @@ namespace eshopping.Models
 
         public long Phonenumber { get; set; }
 
-        //public string City { get; set; }
+        [Column(TypeName = "bit")]
+        [DefaultValue(false)]
+        public bool Isadmin { get; set; }
 
 
         //public string Address { get; set; }
